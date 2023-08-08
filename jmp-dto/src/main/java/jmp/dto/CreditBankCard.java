@@ -1,5 +1,7 @@
 package jmp.dto;
 
 public class CreditBankCard extends BankCard{
-    //    TODO:
+    public CreditBankCard(String number, User user) {
+        super(number, user);
+    }
 }

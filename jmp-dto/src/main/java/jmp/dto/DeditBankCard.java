@@ -1,6 +1,7 @@
 package jmp.dto;
 
 public class DeditBankCard extends BankCard{
-//    TODO:
-//    private enum bankCardType = dto.jmp.BankCardType.DEBIT;
+    public DeditBankCard(String number, User user) {
+        super(number, user);
+    }
 }
