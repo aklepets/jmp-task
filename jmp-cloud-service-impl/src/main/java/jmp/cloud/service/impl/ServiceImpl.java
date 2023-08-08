@@ -12,16 +12,18 @@ public class ServiceImpl implements ServiceInterface {
 
     @Override
     public void subscribe(BankCard bankCard) {
-
+//        TODO
     }
 
     @Override
     public Optional<Subscription> getSubscriptionByBankCardNumber(String bankCardNumber) {
+//        TODO
         return Optional.empty();
     }
 
     @Override
     public List<User> getAllUsers() {
+//        TODO
         return null;
     }
 }
