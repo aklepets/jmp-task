@@ -1,5 +1,7 @@
 package jmp.dto;
 
+import java.util.Random;
+
 public class BankCard {
     public String number;
     public User user;
@@ -7,6 +9,11 @@ public class BankCard {
     public BankCard(String number, User user) {
         this.number = number;
         this.user = user;
+    }
+
+    public BankCard() {
+        number = String.valueOf((int)Math.random() * 30 + 1);
+        user = new User();
     }
 
     public String getNumber() {

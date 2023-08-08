@@ -6,6 +6,11 @@ public class Subscription {
     public String bankcard;
     public LocalDate startDate;
 
+    public Subscription(String bankcard, LocalDate startDate) {
+        this.bankcard = bankcard;
+        this.startDate = startDate;
+    }
+
     public String getBankcard() {
         return bankcard;
     }

@@ -13,6 +13,16 @@ public class User {
         this.birthday = birthday;
     }
 
+    public User(){
+        int number = (int)Math.random() * 1000 + 1;
+        name = "FirstName" + number;
+        surname = "LastName" + number;
+        int randomYear = (int)Math.random() * 50 + 1983;
+        int randomMonth = (int)Math.random() * 12 + 1;
+        int randomDay = (int)Math.random() * 27 + 1;
+        birthday = LocalDate.of(randomYear, randomMonth, randomDay);
+    }
+
     public String getName() {
         return name;
     }
