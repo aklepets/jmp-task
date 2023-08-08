@@ -1,4 +1,4 @@
-package dto.jmp;
+package jmp.dto;
 
 public class DeditBankCard extends BankCard{
 //    TODO:

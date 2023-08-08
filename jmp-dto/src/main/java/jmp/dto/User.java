@@ -1,4 +1,4 @@
-package dto.jmp;
+package jmp.dto;
 
 import java.time.LocalDate;
 
