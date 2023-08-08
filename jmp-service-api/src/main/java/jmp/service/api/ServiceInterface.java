@@ -9,6 +9,6 @@ import java.util.Optional;
 
 public interface ServiceInterface {
     public void subscribe(BankCard bankCard);
-    public Optional<Subscription> getSubscriptionByBankCardNumber(String subscription);
+    public Optional<Subscription> getSubscriptionByBankCardNumber(String bankCardNumber);
     public List<User> getAllUsers();
 }
