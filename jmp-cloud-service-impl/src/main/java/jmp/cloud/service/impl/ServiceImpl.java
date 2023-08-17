@@ -5,8 +5,12 @@ import jmp.dto.Subscription;
 import jmp.dto.User;
 import jmp.service.api.ServiceInterface;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.time.LocalDate;
+import java.util.stream.Collectors;
 
 public class ServiceImpl implements ServiceInterface {
 
@@ -17,8 +21,15 @@ public class ServiceImpl implements ServiceInterface {
 
     @Override
     public Optional<Subscription> getSubscriptionByBankCardNumber(String bankCardNumber) {
-//        TODO
-        return Optional.empty();
+//        TODO: where to initialize this list??
+        List<Subscription> subscriptionList  = new ArrayList<>(Arrays.asList(new Subscription("1", LocalDate.of(2000, 1, 1))));
+                subscriptionList
+                .stream()
+                .filter(subscription ->
+                        subscription.getBankcard().equals(bankCardNumber))
+                .collect(Collectors.toList());
+        Optional<Subscription> subscriptionToReturn = Optional.of(subscriptionList.get(0));
+        return subscriptionToReturn;
     }
 
     @Override
